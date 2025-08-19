@@ -148,7 +148,7 @@ class DealsGrid extends \CBitrixComponent implements Controllerable
 
 // todo смарт проц должен быть
 
-            $entityTypeId = 1044;
+            $entityTypeId = 1038;
             $itemId = $this->arParams['id'];
 
             $factory = Container::getInstance()->getFactory($entityTypeId);
@@ -157,7 +157,7 @@ class DealsGrid extends \CBitrixComponent implements Controllerable
                 $item = $factory->getItem($itemId);
 
                 if ($item) {
-                    $UF_CRM_DEAL_VIN = $item->get('UF_CRM_5_VIN'); // код кастомного поля
+                    $UF_CRM_DEAL_VIN = $item->get('UF_CRM_3_VIN'); // код кастомного поля
 
                 }
             }
