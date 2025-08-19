@@ -5,6 +5,7 @@ BX.ready(function (e) {
         if ($(e.target).parents('tr')) {
             // todo при клике на tr авто из списка  находим id элемента в GarageTable
             var iGarageTableId = $(e.target).parents(' tr').data('id');
+            alert(iGarageTableId);
 
            var request = BX.ajax.runComponentAction('lab.crmcustomtab:deals.grid', 'test', {
                 mode: 'class',
